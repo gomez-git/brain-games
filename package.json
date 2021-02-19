@@ -1,0 +1,27 @@
+{
+  "name": "backend-project-lvl1",
+  "version": "1.0.0",
+  "description": "first project on hexlet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomez-git/backend-project-lvl1.git"
+  },
+  "keywords": [
+    "brain",
+    "games"
+  ],
+  "author": "Konstantin Kuzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomez-git/backend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/gomez-git/backend-project-lvl1#readme",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
+}
