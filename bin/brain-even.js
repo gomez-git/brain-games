@@ -6,7 +6,7 @@ import game from '../games/brain-even.js';
 console.log('Welcome to the Brain Games!');
 const userName = getName();
 console.log(`Hello, ${userName}!`);
-console.log('What is the result of the expression?');
+console.log('Answer "yes" if the number is even, otherwise answer is "no".');
 const result = game();
 if (result) {
   console.log(`Congratulations, ${userName}!`);
