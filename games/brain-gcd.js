@@ -7,7 +7,6 @@ const gcd = (num1, num2) => {
       return String(i);
     }
   }
-  return num1;
 };
 const getCorrectAnswer = (num1, num2) => gcd(num1, num2);
 

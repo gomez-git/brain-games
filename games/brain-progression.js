@@ -14,8 +14,8 @@ const getCorrectAnswer = (num, step, position) => String(num + step * position);
 export default () => {
   for (let i = 0; i < 3; i += 1) {
     const randomInt1 = getRandomInt();
-    const randomInt2 = getRandomInt(3, 9);
-    const randomInt3 = getRandomInt(0, 7);
+    const randomInt2 = getRandomInt(3, 10);
+    const randomInt3 = getRandomInt(1, 7);
     const progression = getProgression(randomInt1, randomInt2, randomInt3);
     console.log(`Question: ${progression}`);
     const userAnswer = getAnswer();
