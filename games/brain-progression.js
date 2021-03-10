@@ -7,7 +7,7 @@ const getProgression = (num, step, position) => {
     result.push(i);
   }
   result[position] = '..';
-  return result.join(', ');
+  return result.join(' ');
 };
 const getCorrectAnswer = (num, step, position) => String(num + step * position);
 
