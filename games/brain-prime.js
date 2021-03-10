@@ -13,7 +13,7 @@ const getCorrectAnswer = (num) => (isPrime(num) ? 'yes' : 'no');
 
 export default () => {
   for (let i = 0; i < 3; i += 1) {
-    const randomInt = getRandomInt();
+    const randomInt = getRandomInt(2);
     console.log(`Question: ${randomInt}`);
     const userAnswer = getAnswer();
     const correctAnswer = getCorrectAnswer(randomInt);
