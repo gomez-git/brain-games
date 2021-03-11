@@ -4,22 +4,27 @@ export const greetings = () => {
   console.log('Welcome to the Brain Games!');
   const userName = getName();
   console.log(`Hello, ${userName}!`);
+
   return userName;
 };
 
 const engine = (setArgs, getCorrectAnswer) => {
-  for (let i = 0; i < 3; i += 1) {
+  for (let gamesCount = 1; gamesCount < 4; gamesCount += 1) {
     const args = setArgs();
     console.log(`Question: ${args.join(' ')}`);
+
     const userAnswer = getAnswer();
     const correctAnswer = getCorrectAnswer(args);
+
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+
       return false;
     }
   }
+
   return true;
 };
 
