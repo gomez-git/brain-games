@@ -1,15 +1,5 @@
 #!/usr/bin/env node
 
-import getName from '../src/cli.js';
-import game from '../games/brain-calc.js';
+import startGame from '../src/games/calc.js';
 
-console.log('Welcome to the Brain Games!');
-const userName = getName();
-console.log(`Hello, ${userName}!`);
-console.log('What is the result of the expression?');
-const gameResult = game();
-if (gameResult) {
-  console.log(`Congratulations, ${userName}!`);
-} else {
-  console.log(`Let's try again, ${userName}!`);
-}
+startGame();
