@@ -3,6 +3,14 @@
 # Welcome to the Brain Games!
 This is my first JS project based on hexlet backend courses. I built it with some functions, cycles, arrays and readlyneSync.
 
+## How to install
+```
+git clone git@github.com:gomez-git/brain-games.git
+cd brain-games
+make install
+npm link
+```
+##
 Preview of games with description below.
 
 ## brain-calc
