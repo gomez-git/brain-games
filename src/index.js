@@ -9,7 +9,7 @@ export const greetings = () => {
 };
 
 const engine = (setArgs, getCorrectAnswer) => {
-  for (let gamesCount = 1; gamesCount < 4; gamesCount += 1) {
+  for (let gamesCount = 0; gamesCount < 3; gamesCount += 1) {
     const args = setArgs();
     console.log(`Question: ${args.join(' ')}`);
 
