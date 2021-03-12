@@ -8,7 +8,6 @@ This is my first JS project based on hexlet backend courses. I built it with som
 git clone git@github.com:gomez-git/brain-games.git
 cd brain-games
 make install
-npm link
 ```
 ##
 Preview of games with description below.
