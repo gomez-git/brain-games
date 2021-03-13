@@ -1,9 +1,11 @@
 import getName, { getAnswer } from './cli.js';
 
+const say = console.log;
+
 export const greetings = () => {
-  console.log('Welcome to the Brain Games!');
+  say('Welcome to the Brain Games!');
   const userName = getName();
-  console.log(`Hello, ${userName}!`);
+  say(`Hello, ${userName}!`);
 
   return userName;
 };
@@ -11,15 +13,15 @@ export const greetings = () => {
 const engine = (setArgs, getCorrectAnswer) => {
   for (let gamesCount = 0; gamesCount < 3; gamesCount += 1) {
     const args = setArgs();
-    console.log(`Question: ${args.join(' ')}`);
+    say(`Question: ${args.join(' ')}`);
 
     const userAnswer = getAnswer();
     const correctAnswer = getCorrectAnswer(args);
 
     if (userAnswer === correctAnswer) {
-      console.log('Correct!');
+      say('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      say(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
 
       return false;
     }
@@ -30,15 +32,15 @@ const engine = (setArgs, getCorrectAnswer) => {
 
 const goodbye = (gameResult, userName) => {
   if (gameResult) {
-    console.log(`Congratulations, ${userName}!`);
+    say(`Congratulations, ${userName}!`);
   } else {
-    console.log(`Let's try again, ${userName}!`);
+    say(`Let's try again, ${userName}!`);
   }
 };
 
 export default (setTask, setArgs, getCorrectAnswer) => {
-  const userName = (() => greetings())();
-  console.log(setTask);
+  const userName = greetings();
+  say(setTask);
   const gameResult = engine(setArgs, getCorrectAnswer);
   goodbye(gameResult, userName);
 };
