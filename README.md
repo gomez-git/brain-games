@@ -1,7 +1,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Linter](https://github.com/gomez-git/backend-project-lvl1/actions/workflows/.eslint.yml/badge.svg)](https://github.com/gomez-git/backend-project-lvl1/actions)
 # Welcome to the Brain Games!
-This is my first JS project based on hexlet backend courses. I built it with some functions, cycles, arrays and readlyneSync.
+This is my first JavaScript project based on hexlet backend courses. I built it with some functions, cycles, arrays and readlineSync.
 
 ## How to install
 ```
