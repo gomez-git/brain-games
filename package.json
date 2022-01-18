@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.0",
+  "version": "2.0.2",
   "description": "first project on hexlet",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gomez-git/backend-project-lvl1.git"
+    "url": "git+https://github.com/gomez-git/brain-games.git"
   },
   "keywords": [
     "brain",
@@ -17,9 +17,9 @@
   "author": "Konstantin Kuzin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gomez-git/backend-project-lvl1/issues"
+    "url": "https://github.com/gomez-git/brain-games/issues"
   },
-  "homepage": "https://github.com/gomez-git/backend-project-lvl1#readme",
+  "homepage": "https://github.com/gomez-git/brain-games#readme",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",
