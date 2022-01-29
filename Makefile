@@ -1,12 +1,12 @@
-install:
-	npm install
+install: # install dependencies
+	npm ci
 	npm link
 
-brain-games:
+brain-games: # run brain-games.js
 	node bin/brain-games.js
 
-publish:
+publish: # publish npm package
 	npm publish --dry-run
 
-lint:
+lint: # run linter
 	npx eslint .
